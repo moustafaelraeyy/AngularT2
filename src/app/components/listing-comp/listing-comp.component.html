@@ -1,0 +1,18 @@
+<p class="pp">Latest News..</p>
+<div *ngFor="let item of alldata.articles ">
+  <div class="container">
+    <div class="row rr">
+      <div class="col-md-6">
+        <img src="{{item.urlToImage}}" alt="">
+        {{item.title}}
+      </div>
+      <div class="col-md-3">
+        <img src="{{item.urlToImage}}" alt="">
+        </div>
+      <div class="col-md-3">
+        {{item.title}}
+      </div>
+    </div>
+  </div>
+</div>
+
