@@ -1,18 +1,44 @@
 <p class="pp">Latest News..</p>
-<div *ngFor="let item of alldata.articles ">
-  <div class="container">
-    <div class="row rr">
-      <div class="col-md-6">
-        <img src="{{item.urlToImage}}" alt="">
-        {{item.title}}
+<div class="container">
+  <div class="row rr" *ngFor="let item of alldata.articles; let i = index">
+    <div class="col-md-6 ">
+      <img src="{{ item.urlToImage }}" (click)="details()" *ngIf="i < 1" />
+      <div class="ss" *ngIf="i < 1">{{ item.title }}</div>
+    </div>
+    <div class="col-md-3 ">
+      <img src="{{ item.urlToImage }}" (click)="details()" *ngIf="i < 2" />
+      <div class="th" *ngIf="i < 2">{{ item.title }}</div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="posts">
+        <img src="{{ item.urlToImage }}" (click)="details()" *ngIf="i < 2" />
+
+        <div class="t" *ngIf="i < 2">{{ item.title }}</div>
       </div>
-      <div class="col-md-3">
-        <img src="{{item.urlToImage}}" alt="">
-        </div>
-      <div class="col-md-3">
-        {{item.title}}
+    </div>
+  </div>
+</div>
+<div class="container s">
+  <h6>Editor Picks</h6>
+  <div class="row" *ngFor="let item of alldata.articles; let i = index">
+    <div class="col-md-6 editor">
+      <img src="{{ item.urlToImage }}" (click)="details()" *ngIf="i < 4" />
+      <div class="title" *ngIf="i < 4">
+        {{ item.title }}
       </div>
     </div>
   </div>
 </div>
 
+<div class="container second">
+  <h6>Trending</h6>
+  <div class="row">
+    <div class="col-md-3" *ngFor="let item of alldata.articles; let i = index">
+      <img src="{{ item.urlToImage }}" (click)="details()" *ngIf="i < 4" />
+      <div class="title" *ngIf="i < 4">
+        {{ item.title }}
+      </div>
+    </div>
+  </div>
+</div>

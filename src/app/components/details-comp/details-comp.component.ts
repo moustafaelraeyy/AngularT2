@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsCompComponent implements OnInit {
 
+  photo:any='';
+
   constructor() { }
 
   ngOnInit() {

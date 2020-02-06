@@ -1,9 +1,77 @@
+
 .pp{
     text-align:center;
     font-size:40px;
     margin-bottom:20px;
     text-transform: uppercase;
+    color: rgb(212, 8, 8);
+    letter-spacing: 2px;
+    margin-top: 20px;
 }
-.rr img{
-  width:100%
+.ss{
+  font-size: 25px;
+  margin-top: 20px;
+  font-family: cursive;
+  font-weight: 500;
+  line-height: 2;
 }
+.th{
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+img{
+  width:100%;
+  cursor: pointer;
+}
+.second{
+  margin-top: 50px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.title{
+  margin: 20px 0px;
+}
+.posts{
+  display: flex;
+  margin-top: 20px;
+}
+.posts .t{
+  width: 80%;
+}
+.s img{
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.editor{
+  display: flex;
+
+}
+
+
+.s .title{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.posts img{
+  margin-right: 5px;
+  width: 80px;
+  height: 80px;
+
+}
+ h6{
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  font-size: 18px;
+  margin-bottom: 20px;
+
+}
+
+
